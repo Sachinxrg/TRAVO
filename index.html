@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVO - From Anywhere to Everywhere</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <svg class="logo" viewBox="0 0 500 220">
+                <defs>
+                    <linearGradient id="heroRedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF0000"/>
+                        <stop offset="100%" style="stop-color:#CC0000"/>
+                    </linearGradient>
+                    <linearGradient id="heroMetallicGold" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#FFD700"/>
+                        <stop offset="50%" style="stop-color:#FFF5CC"/>
+                        <stop offset="100%" style="stop-color:#FFD700"/>
+                    </linearGradient>
+                </defs>
+                <!-- T -->
+                <g transform="translate(40, 60)">
+                    <g transform="translate(0, 0)">
+                        <path d="M0,0 h50 v12 h-19 v78 h-12 v-78 h-19 z" fill="url(#heroRedGradient)"/>
+                        <circle cx="25" cy="30" r="6" fill="url(#heroMetallicGold)"/>
+                    </g>
+                    <!-- R -->
+                    <g transform="translate(75, 0)">
+                        <path d="M0,0 h30 c15,0 25,12 25,25 c0,10 -7,20 -17,23 l20,42 h-15 l-18-42 h-13 v42 h-12 z M12,12 v25 h18 c7,0 13,-5 13,-12 c0,-7 -6,-13 -13,-13 z" fill="url(#heroRedGradient)"/>
+                    </g>
+                    <!-- A -->
+                    <g transform="translate(155, 0)">
+                        <path d="M0,90 l35,-90 l35,90 h-13 l-8,-20 h-28 l-8,20 z M35,15 l-10,43 h20 z" fill="url(#heroRedGradient)"/>
+                    </g>
+                    <!-- V -->
+                    <g transform="translate(235, 0)">
+                        <path d="M0,0 l35,90 l35,-90 h-13 l-22,60 l-22,-60 z" fill="url(#heroRedGradient)"/>
+                    </g>
+                    <!-- O -->
+                    <g transform="translate(335, 0)">
+                        <path d="M35,0 c25,0 45,20 45,45 c0,25 -20,45 -45,45 c-25,0 -45,-20 -45,-45 c0,-25 20,-45 35,-45 z M35,12 c-18,0 -32,15 -32,33 c0,18 14,33 32,33 c18,0 32,-15 32,-33 c0,-18 -14,-33 -32,-33 z" fill="url(#heroRedGradient)"/>
+                    </g>
+                </g>
+                <!-- Tagline -->
+                <g transform="translate(250, 170)">
+                    <path d="M-140,0 L-20,0" stroke="url(#heroMetallicGold)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="0" y="0" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="url(#heroMetallicGold)" letter-spacing="3">
+                        FROM ANYWHERE TO EVERYWHERE
+                    </text>
+                    <path d="M20,0 L140,0" stroke="url(#heroMetallicGold)" stroke-width="2" stroke-linecap="round"/>
+                </g>
+                <!-- Decorative Elements -->
+                <g transform="translate(250, 195)">
+                    <path d="M-150,0 L150,0" stroke="url(#heroRedGradient)" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="0" cy="0" r="4" fill="url(#heroMetallicGold)"/>
+                    <circle cx="0" cy="0" r="8" fill="none" stroke="url(#heroRedGradient)" stroke-width="1"/>
+                </g>
+            </svg>
+        
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#destinations">Rides</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <div class="logo-glow"></div>
+                <svg class="hero-logo" viewBox="0 0 500 220">
+                    <!-- Your full SVG logo code here -->
+                    <defs>
+                        <linearGradient id="heroRedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF0000"/>
+                            <stop offset="100%" style="stop-color:#CC0000"/>
+                        </linearGradient>
+                        <linearGradient id="heroMetallicGold" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#FFD700"/>
+                            <stop offset="50%" style="stop-color:#FFF5CC"/>
+                            <stop offset="100%" style="stop-color:#FFD700"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- T -->
+                    <g transform="translate(40, 60)">
+                        <g transform="translate(0, 0)">
+                            <path d="M0,0 h50 v12 h-19 v78 h-12 v-78 h-19 z" fill="url(#heroRedGradient)"/>
+                            <circle cx="25" cy="30" r="6" fill="url(#heroMetallicGold)"/>
+                        </g>
+                        <!-- R -->
+                        <g transform="translate(75, 0)">
+                            <path d="M0,0 h30 c15,0 25,12 25,25 c0,10 -7,20 -17,23 l20,42 h-15 l-18-42 h-13 v42 h-12 z M12,12 v25 h18 c7,0 13,-5 13,-12 c0,-7 -6,-13 -13,-13 z" fill="url(#heroRedGradient)"/>
+                        </g>
+                        <!-- A -->
+                        <g transform="translate(155, 0)">
+                            <path d="M0,90 l35,-90 l35,90 h-13 l-8,-20 h-28 l-8,20 z M35,15 l-10,43 h20 z" fill="url(#heroRedGradient)"/>
+                        </g>
+                        <!-- V -->
+                        <g transform="translate(235, 0)">
+                            <path d="M0,0 l35,90 l35,-90 h-13 l-22,60 l-22,-60 z" fill="url(#heroRedGradient)"/>
+                        </g>
+                        <!-- O -->
+                        <g transform="translate(335, 0)">
+                            <path d="M35,0 c25,0 45,20 45,45 c0,25 -20,45 -45,45 c-25,0 -45,-20 -45,-45 c0,-25 20,-45 35,-45 z M35,12 c-18,0 -32,15 -32,33 c0,18 14,33 32,33 c18,0 32,-15 32,-33 c0,-18 -14,-33 -32,-33 z" fill="url(#heroRedGradient)"/>
+                        </g>
+                    </g>
+                    <!-- Tagline -->
+                    <g transform="translate(250, 170)">
+                        <path d="M-140,0 L-20,0" stroke="url(#heroMetallicGold)" stroke-width="2" stroke-linecap="round"/>
+                        <text x="0" y="0" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="url(#heroMetallicGold)" letter-spacing="3">
+                            FROM ANYWHERE TO EVERYWHERE
+                        </text>
+                        <path d="M20,0 L140,0" stroke="url(#heroMetallicGold)" stroke-width="2" stroke-linecap="round"/>
+                    </g>
+                    <!-- Decorative Elements -->
+                    <g transform="translate(250, 195)">
+                        <path d="M-150,0 L150,0" stroke="url(#heroRedGradient)" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="0" cy="0" r="4" fill="url(#heroMetallicGold)"/>
+                        <circle cx="0" cy="0" r="8" fill="none" stroke="url(#heroRedGradient)" stroke-width="1"/>
+                    </g>
+                </svg>
+            </div>
+            
+            <p>"Reliable, affordable, and hassle-free rides—wherever you need to go, Travo gets you there!"</p> 
+            <button class="cta-button">Begin Your ride</button>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose TRAVO</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✈️</div>
+                <h3>Global Coverage</h3>
+                <p>Access to destinations worldwide with comprehensive travel packages tailored to your dreams</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌟</div>
+                <h3>Premium Experience</h3>
+                <p>Luxury accommodations and personalized service throughout your entire journey</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Best Value</h3>
+                <p>Competitive prices and exclusive deals for unforgettable adventures that last a lifetime</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <h2>Your Ride, Your Choice</h2>
+        <p>Find the perfect car for your next trip.</p><br><br><br>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="AUTO.png" alt="auto">
+                <h3>Auto-Rickshaw</h3>
+                <p>An auto ride is like a reality check — no matter how rich you feel, the fare will humble you.</p>
+            </div>
+            <div class="destination-card">
+                <img src="SEDAN.png" alt="sedan" height="100px" width="100px">
+                <h3>Prime-Sedan</h3>
+                <p>Sedans: For those who want comfort, speed, and a little bit of ‘I’ve made it’ energy.</p>
+            </div>
+            <div class="destination-card">
+                <img src="SUV.png" alt="SUV">
+                <h3>SUV</h3>
+                <p>More seats, more stories, and more fun — an SUV is where friendships and family bonds grow stronger.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Travo: From Anywhere to Everywhere</p>
+        <div class="about-content">
+            <p>Welcome to <b>Travo</b>, your ultimate travel companion for seamless and reliable transportation across India. We are not just a ride-hailing service; we are a movement towards smarter, safer, and more convenient travel.</p><br>
+            <p>At Travo, we believe that getting from <b>anywhere to everywhere </b>should be effortless. Whether you need a quick city commute, an airport transfer, or a long-distance journey, we’ve got you covered with a wide range of vehicles, from budget-friendly hatchbacks to luxurious sedans and spacious SUVs.</p><br>
+            <p>Our mission is to provide <b>affordable, safe, and comfortable rides</b> at the tap of a button. With our professional drivers, and 24/7 availability, we ensure that every journey with us is smooth and hassle-free.</p><br>
+            <p>Join us and experience travel the <b>Travo way—where every ride is a journey worth taking!</b></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any inquiries or support.</p>
+        <div class="contact-form">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup" id="ridePopup">
+            <h3>Book Your Ride</h3>
+            <form>
+            <input type="text" id="location" placeholder="Enter your location">
+            <input type="number" id="passengers" placeholder="Number of passengers">
+            <select id="vehicleType">
+                <option value="">Select Vehicle Type</option>
+                <option value="SUV">SUV</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Hatchback">Hatchback</option>
+            </select>
+            <button id="confirmRide">Confirm</button>
+            </form>
+        </div>
+    
+    </section>
+   
+</body>
+</html>
